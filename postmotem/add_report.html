@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Post-Motem Report</title>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar sticky-top navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</nav>
+&nbsp;
+<div class="row">
+  <div class="col-md-12">
+    <form>
+      <fieldset>
+      	<legend>Common Details</legend>
+      	<label for="inquest" >Inquest No :</label>
+        <input id="inquest" name="inquest" class="form-control" type="text" placeholder="Inquest Number">
+        <hr>
+        <label for="place">Place :</label>
+        <input id="place" name="place" class="form-control" type="text" placeholder="Place">
+        <hr>
+        <hr>
+        <label for="court">Court :</label>
+        <input id="court" name="court" class="form-control" type="text" placeholder="Court">
+        <hr>
+        <label for="date" >Date :</label>
+        <input type="date">
+        <hr>
+		<label for="deceasedname" >Name of the Deceased :</label>
+        <input id="deceasedname" name="deceasedname" class="form-control" type="text" placeholder="Name of the Deceased">
+        <hr>
+        <label for="da_timeofdeath" >Date and Time (if known):</label>
+        <input type="date"> &nbsp;&nbsp;<input type="time">
+        <hr>
+        <label for="mofficer">Name of the Medical Office who conducted Postmotem :</label>
+        <input id="mofficer" name="mofficer" class="form-control" type="text">
+        <hr>
+        <label for="da_timeexam" >Date and Time of Post-Motem Examination :</label>
+        <input id="da_timeexam" name="da_timeexam" class="form-control" type="text">
+        <hr>
+        <label for="name_desgnation">Name and Designation of the Person Requested Postmotem :</label>
+        <textarea id="name_desgnation" name="name_desgnation" class="form-control" placeholder="Name and Designation of the Person Requested Postmotem" ></textarea>
+        <hr>
+        <label for="district">District :</label>
+        <input id="district" name="district" class="form-control" type="text" placeholder="District">
+        <hr>
+      	<label for="place_exam">Place of Examination :</label>
+        <input id="place_exam" name="place_exam" class="form-control" type="text" placeholder="Place of Examination">
+        <hr>
+        <label for="name_address">Names and Address of the Persons Identified the Body :</label>
+        <textarea id="name_address" name="name_address" class="form-control"  placeholder="Names and Address of the Persons Identified the Body"></textarea>
+        <hr>
+        </fieldset>
+        &nbsp;
+      	<fieldset>
+      	<legend>Common Post-Motem Examinations</legend>
+      	<label for="examlocus" >Examination of Locus(Site and position of The Body) :</label>
+        <input id="examlocus" name="examlocus" class="form-control" type="text" placeholder="Examination of Locus">
+        <hr>
+        <label for="external_exam">External Examination (Clothes, Nourishment, Products of disease, etc.):</label>
+        <input id="external_exam" name="external_exam" class="form-control" type="text" placeholder="External Examination">
+        <hr>
+        <p> Injuries (Inflicted Before or after Death) (Use Continuation Sheet, and Health 1135 A if necessary) </p>
+        <hr>
+		<label for="height" >Height (by measurement):</label>
+        <input id="height" name="height" class="form-control" type="text" placeholder="Height (by measurement)">
+        <hr>
+        <label for="age" >Age (estimated when Relevant):</label>
+        <input id="age" name="age" class="form-control" type="text" placeholder="Age">
+        <hr>
+        <label for="sex">Sex:</label>
+        <label><input type="radio" name="sex" value="male" id="sex_0"> Male</label>
+        <label><input type="radio" name="sex" value="female" id="sex_1">Female</label>
+        <hr>
+        <label for="eyes_pupil" >Eyes and Pupils :</label>
+        <input id="eyes_pupil" name="eyes_pupil" class="form-control" type="text" placeholder="Eyes and Pupils">
+        <hr>
+        <label for="hair">Length, colour and condition of Hair :</label>
+        <input id="hair" name="hair" class="form-control" type="text" placeholder="Length, colour and condition of Hair">
+        <hr>
+        <label for="tongue">Position and condition of tongue :</label>
+        <input id="tongue" name="tongue" class="form-control" type="text" placeholder="Position and condition of tongue">
+        <hr>
+      	<label for="dental">Number of Tooth (Complete, incomplete, peculiarities) :</label>
+        <input id="dental" name="dental" class="form-control" type="text" placeholder="Number of Tooth">
+		<hr>
+     	<fieldset>
+      	<legend>Signs of Death</legend>
+      	<label for="temp_body">Temperature of the Body (Record when necessary) :</label>
+        <input id="temp_body" name="temp_body" class="form-control" type="text" placeholder="Temperature of the Body">
+        <label for="pri_flac">Primary flaccidity :</label>
+        <input id="pri_flac" name="pri_flac" class="form-control" type="text" placeholder="Primary flaccidity">
+        <label for="rigor_mortis">Rigor mortis :</label>
+        <input id="rigor_mortis" name="rigor_mortis" class="form-control" type="text" placeholder="Rigor mortis">
+        <label for="hypostasis">Hypostasis :</label>
+        <input id="hypostasis" name="hypostasis" class="form-control" type="text" placeholder="Hypostasis">
+        <label for="putrefac">Putrefaction :</label>
+        <input id="putrefac" name="putrefac" class="form-control" type="text" placeholder="Putrefaction">
+        </fieldset>
+        <hr>
+      	<label for="hands">Condition and Contents of Hands and nails :</label>
+        <input id="hands" name="hands" class="form-control" type="text" placeholder="Condition and Contents of Hands and nails">
+		<hr>
+      	</fieldset>
+      	&nbsp;
+      	<fieldset>
+      		<legend>Natual Openings Examinations</legend>
+      		<hr>
+			<label for="nat_open">Natural Openings (especially with reference to presences of foreign substance, poisons, presence or absence of sign of virginity and recent injuries of below parts):</label>
+			<input id="nat_open" name="nat_open" class="form-control" type="text" placeholder="Natural Openings">
+			<hr>
+			<label for="nme">Nose, Mouth and Ears :</label>
+			<input id="nme" name="nme" class="form-control" type="text" placeholder="Nose, Mouth and Ears">
+			<hr>
+			<label for="urinary">Urinary and Sexual :</label>
+			<input id="urinary" name="urinary" class="form-control" type="text" placeholder="Urinary and Sexual">
+			<hr>
+			<label for="anal">Anal :</label>
+			<input id="anal" name="anal" class="form-control" type="text" placeholder="Anal" >
+		</fieldset>
+		&nbsp;
+		<hr>
+      	<fieldset>
+      		<legend>Neck Examinations</legend>
+      		<hr>
+			<label for="neck">Neck :</label>
+			<textarea id="neck" name="neck" class="form-control" placeholder="Neck" ></textarea>	<hr>	
+     		<label for="soft_tissue">Soft Tissues and Blood vessel of neck and cervical vartebrae (special attention to strangulation) :</label>
+			<input id="soft_tissue" name="soft_tissue" class="form-control" type="text" placeholder="Soft Tissues and Blood vessel" >	
+     			
+      	</fieldset>
+		&nbsp;
+      	<hr>
+      	<fieldset>
+      		<legend>Head Examinations</legend>
+      		<hr>
+			<label for="head">Head :</label>
+			<input id="head" name="head" class="form-control" type="text" placeholder="Head" >		
+			<hr>
+			<label for="soft_covering">Soft Part covering it :</label>
+			<input id="soft_covering" name="soft_covering" class="form-control" type="text" placeholder="Soft Part covering it" >	
+			<hr>
+			<label for="bone_skull">Bones of Skull :</label>
+			<input id="bone_skull" name="bone_skull" class="form-control" type="text" placeholder="Bones of Skull" >		
+			<hr>
+			<label for="mem_sin">Membranes and sinuses of Brain :</label>
+			<input id="mem_sin" name="mem_sin" class="form-control" type="text" placeholder="Membranes and sinuses of Brain" >		
+			<hr>
+			<label for="brain_subs">Brain Substance and ventricles :</label>
+			<input id="brain_subs" name="brain_subs" class="form-control" type="text" placeholder="Brain Substance and ventricles" >
+			<hr>
+			<label for="brain_blood">Blood vessels of Brain :</label>
+			<input id="brain_blood" name="brain_blood" class="form-control" type="text" placeholder="Blood vessels of Brain" >		
+     							
+      	</fieldset>
+      	<hr>
+      	<fieldset>
+      		<legend>Spinal Examinations</legend>
+      		<hr>
+			<label for="spinal">Spinal Cord :</label>
+			<textarea id="spinal" name="spinal" class="form-control" placeholder="Spinal Cord"></textarea>
+      	</fieldset>
+      	<hr>
+      	<fieldset>
+      		<legend>Thorax Examinations</legend>
+      		<hr>
+			<label for="thorax">Thorax :</label>
+			<input id="thorax" name="thorax" class="form-control" type="text" placeholder="Thorax" ><hr>
+			<label for="soft_covering_thorax">Soft Part covering it :</label>
+			<input id="soft_covering_thorax" name="soft_covering_thorax" class="form-control" type="text" placeholder="Soft Part covering it" >	
+			<hr>
+			<label for="bone_thorax">Bones (ribs, sternum, vertebrae) :</label>
+			<input id="bone_thorax" name="bone_thorax" class="form-control" type="text" placeholder="Bones (ribs, sternum, vertebrae)" >		
+			<hr>
+			<label for="chest_cavity">Chest cavity (position of organs, contents of pleural cavities) :</label>
+			<input id="chest_cavity" name="chest_cavity" class="form-control" type="text" placeholder="Chest cavity (position of organs, contents of pleural cavities)" >		
+			<hr>
+			<label for="pericardium">Pericardium and contents :</label>
+			<input id="pericardium" name="pericardium" class="form-control" type="text" placeholder="Pericardium and contents" >
+			<hr>
+			<label for="heart">Heart (cavities and contents, valves myocardium) :</label>
+			<input id="heart" name="heart" class="form-control" type="text" placeholder="Heart (cavities and contents, valves myocardium)" >	
+     		<hr>
+			<label for="coro_vess">Coronary vessels :</label>
+			<input id="coro_vess" name="coro_vess" class="form-control" type="text" placeholder="Coronary vessels" >
+    		<hr>
+			<label for="large_vessles">Large Blood vessels :</label>
+			<input id="large_vessles" name="large_vessles" class="form-control" type="text" placeholder="Large Blood vessels" >	
+    		<hr>
+			<label for="lary_tra">Larynax, trachea and bronchi (condition and contents) :</label>
+			<input id="lary_tra" name="lary_tra" class="form-control" type="text" placeholder="Larynax, trachea and bronchi (condition and contents)" >	
+    		<hr>
+			<label for="pleura_lungs">Pleura and Lungs :</label>
+			<input id="pleura_lungs" name="pleura_lungs" class="form-control" type="text" placeholder="Pleura and Lungs" >	
+    		<hr>
+			<label for="gullet">Gullet :</label>
+			<input id="gullet" name="gullet" class="form-control" type="text" placeholder="Gullet"> 
+     	</fieldset>
+      	<hr>
+      	<fieldset>
+      		<legend>Abdomen Examinations</legend>
+      		<hr>
+			<label for="abdomen">Abdomen :</label>
+			<input id="abdomen" name="abdomen" class="form-control" type="text" placeholder="Abdomen" ><hr>
+			<label for="con_abdomen">Contents, vessles and position of organs :</label>
+			<input id="con_abdomen" name="con_abdomen" class="form-control" type="text" placeholder="Contents, vessles and position of organs" >	
+			<hr>
+			<label for="peritoneum">Peritoneum :</label>
+			<input id="peritoneum" name="peritoneum" class="form-control" type="text" placeholder="Peritoneum" >		
+			<hr>
+			<label for="diaphragm">Diaphragm :</label>
+			<input id="diaphragm" name="diaphragm" class="form-control" type="text" placeholder="Diaphragm" >		
+			<hr>
+			<label for="liv_gall">Liver and Gall Bladder :</label>
+			<input id="liv_gall" name="liv_gall" class="form-control" type="text" placeholder="Liver and Gall Bladder" >
+			<hr>
+			<label for="spleen">Spleen :</label>
+			<input id="spleen" name="spleen" class="form-control" type="text" placeholder="Spleen" ><hr>
+			<label for="stomach">Stomach (condition and contents) :</label>
+			<input id="stomach" name="stomach" class="form-control" type="text" placeholder="Stomach (condition and contents)" >
+    		<hr>
+			<label for="duodenum">Duodenum, jegunum, ileum (condition and contents; where relevant passage of food) :</label>
+			<input id="duodenum" name="duodenum" class="form-control" type="text" placeholder="Duodenum, jegunum, ileum (condition and contents; where relevant passage of food)" >	
+    		<hr>
+			<label for="large_intes">Large intestines (condition and contents) :</label>
+			<input id="large_intes" name="large_intes" class="form-control" type="text" placeholder="Large intestines (condition and contents)" >	
+    		<hr>
+			<label for="pancreas">Pancreas :</label>
+			<input id="pancreas" name="pancreas" class="form-control" type="text" placeholder="Pancreas" >	
+    		<hr>
+			<label for="kidneys">Kidneys :</label>
+			<input id="kidneys" name="kidneys" class="form-control" type="text" placeholder="Kidneys"> 
+     		<hr>
+			<label for="supra_renal">Supra-renal Glands :</label>
+			<input id="supra_renal" name="supra_renal" class="form-control" type="text" placeholder="Supra-renal Glands"> 
+      	</fieldset>
+      	<hr>
+      	<fieldset>
+      		<legend>Pelvis Examinations</legend>
+      		<hr>
+			<label for="pelvis">Pelvis :</label>
+			<input id="pelvis" name="pelvis" class="form-control" type="text" placeholder="Pelvis" >	
+    		<hr>
+			<label for="urinary_pros">Urinary and bladder prostate (condition and contents) :</label>
+			<input id="urinary_pros" name="urinary_pros" class="form-control" type="text" placeholder="Urinary and bladder prostate (condition and contents)" >	
+    		<hr>
+			<label for="gen_organs">Generative Organs :</label>
+			<input id="gen_organs" name="gen_organs" class="form-control" type="text" placeholder="Generative Organs" >	
+    		<hr>
+			<label for="blood_vess_pel">Blood vessels :</label>
+			<input id="blood_vess_pel" name="blood_vess_pel" class="form-control" type="text" placeholder="Blood vessls"> 
+     		<hr>
+			<label for="pelvic_bones">Vertebrae and Pelvic Bones :</label>
+			<input id="pelvic_bones" name="pelvic_bones" class="form-control" type="text" placeholder="Vertebrae and Pelvic Bones">
+      	</fieldset>
+      	<hr>
+      	<fieldset>
+      		<legend>Cause of Death and Other relevant Deatils</legend>
+      		<hr>
+			<label for="cause_death">Cause of Death and other relevant opinion :</label>
+			<textarea id="cause_death" name="cause_death" class="form-control" placeholder="Cause of Death and other relevant opinion"></textarea>
+      	</fieldset>
+      	<hr>
+      	<div class="form-actions no-margin-bottom" style="text-align:center;">
+         <input type="submit" value="Add New Report" class="btn btn-primary" />
+		 <input type="submit" value="Clear All" class="btn btn-danger" />
+         </div>
+
+
+		</form>
+  </div>
+</div>
+&nbsp;
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © Postmotem Report Generator. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
